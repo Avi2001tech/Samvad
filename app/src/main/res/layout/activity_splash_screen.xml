@@ -32,7 +32,10 @@
         android:layout_marginTop="531dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="54dp"
-        android:src="@drawable/samvad" />
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/samvad"
+        tools:ignore="ImageContrastCheck" />
 
 
 </RelativeLayout>

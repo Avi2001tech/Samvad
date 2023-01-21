@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="15dp"
+    tools:context=".verification_numberPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <soup.neumorphism.NeumorphImageView
+            style="@style/Widget.Neumorph.FloatingActionButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/welcome"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <soup.neumorphism.NeumorphTextView
+                    style="@style/Widget.Neumorph.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/otp_verification"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otp_information"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/enter_phone_number"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:textStyle="italic|bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ccp_countryPreference="us,in"
+                        app:ccp_autoFormatNumber="true"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_contentColor="@android:color/black"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/input_phn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:hint="  phone number"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@color/black"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="4dp"/>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:gravity="center">
+
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/sendOTPbtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Send OTP   "
+                    android:textColor="@color/black"
+                    app:neumorph_shapeType="basin"
+                    style="@style/Widget.Neumorph.Button">
+
+                </soup.neumorphism.NeumorphButton>
+
+                <soup.neumorphism.NeumorphFloatingActionButton
+                    android:id="@+id/sendOTParr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-80dp"
+                    style="@style/Widget.Neumorph.FloatingActionButton"
+                    android:src="@drawable/right_arrow"
+                    app:neumorph_shapeType="pressed"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

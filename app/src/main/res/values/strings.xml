@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Samvad</string>
+    <string name="sendimglogo">SendImgLogo</string>
+    <string name="otp_verification">OTP verification</string>
+    <string name="otp_information">We will send you a one time password on this number</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
 </resources>

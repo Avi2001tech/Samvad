@@ -6,12 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
-import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
 
 public class Splash_Screen extends AppCompatActivity {
-    /*TextView AppName;*/
     LottieAnimationView lottie;
 
     @Override
@@ -34,7 +32,7 @@ public class Splash_Screen extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(Splash_Screen.this,MainActivity.class);
+                Intent i = new Intent(Splash_Screen.this,verification_numberPage.class);
                 startActivity(i);
                 finish();
 
