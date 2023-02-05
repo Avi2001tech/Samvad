@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="toolbar_head" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="toolbar_head2" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

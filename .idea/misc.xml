@@ -4,11 +4,26 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/background.xml" value="0.164" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/callhistory_icon.xml" value="0.1795" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/feedback_icon.xml" value="0.1795" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/gradient_toolbar.xml" value="0.164" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/linkeddevice_icon.xml" value="0.1795" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/newgroup_icon.xml" value="0.1795" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/privacy_icon.xml" value="0.1795" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/rateus_icon.xml" value="0.1795" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/setting_icon.xml" value="0.1795" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/drawable/share_icon.xml" value="0.1795" />
         <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/activity_otp_verify.xml" value="0.16" />
         <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/activity_splash_screen.xml" value="0.23229166666666667" />
         <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/activity_verification_number_page.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/app_bar_main.xml" value="0.23125" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/home.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/nav_header.xml" value="0.23125" />
         <entry key="..\:/Android_studio/Samvad/app/src/main/res/layout/verification_bkgd.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/menu/drawer_navigation_menu.xml" value="0.23125" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/menu/menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android_studio/Samvad/app/src/main/res/menu/toolbar_menu.xml" value="0.23125" />
         <entry key="..\:/Android_studio/Samvad/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.104" />
       </map>
     </option>

@@ -1,4 +1,7 @@
 <resources>
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+
     <string name="app_name">Samvad</string>
     <string name="sendimglogo">SendImgLogo</string>
     <string name="otp_verification">OTP verification</string>

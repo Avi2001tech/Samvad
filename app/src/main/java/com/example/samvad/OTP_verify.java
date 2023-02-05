@@ -62,7 +62,6 @@ public class OTP_verify extends AppCompatActivity {
         btnLay2=findViewById(R.id.button_layout2);
         verificationID = getIntent().getStringExtra("verificationID");
 
-
         verifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,10 +101,9 @@ public class OTP_verify extends AppCompatActivity {
             }
         });
 
-
-        /*initiateOTP();*/
     }
 
+    
 
     private void setupOTPInputs(){
         i1.addTextChangedListener(new TextWatcher() {
@@ -204,70 +202,5 @@ public class OTP_verify extends AppCompatActivity {
             }
         });
     }
-
-    /*private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        progressBar2.setVisibility(View.GONE);
-                        btnLay2.setVisibility(View.VISIBLE);
-                        if (task.isSuccessful()) {
-                            Intent intent = new Intent(OTP_verify.this,MainActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                            startActivity(intent);
-                        } else {
-                            Toast.makeText(OTP_verify.this, "The verification code entered was invalid", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }*/
-
-   /* private void initiateOTP() {
-        PhoneAuthOptions options =
-                PhoneAuthOptions.newBuilder(mAuth)
-                        .setPhoneNumber(phoneNumber)       // Phone number to verify
-                        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                        .setActivity(this)                 // Activity (for callback binding)
-                        .setCallbacks(new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-                            @Override
-                            public void onCodeAutoRetrievalTimeOut(@NonNull String s) {
-                                super.onCodeAutoRetrievalTimeOut(s);
-                            }
-
-                            @Override
-                            public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
-                                OTPid =s;
-                            }
-
-                            @Override
-                            public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
-                                signInWithPhoneAuthCredential(phoneAuthCredential);
-                            }
-
-                            @Override
-                            public void onVerificationFailed(@NonNull FirebaseException e) {
-
-                            }
-                        })          // OnVerificationStateChangedCallbacks
-                        .build();
-        PhoneAuthProvider.verifyPhoneNumber(options);
-    }*/
-    /*private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            startActivity(new Intent());
-                            // Sign in success, update UI with the signed-in user's information
-                            // Update UI
-                        } else {
-                            // Sign in failed, display a message and update the UI
-
-                        }
-                    }
-                });
-    }*/
 
 }
